@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = Student.find(params[:id])
+    student_path (@student)
   end
 
   private
